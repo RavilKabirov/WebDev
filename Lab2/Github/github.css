@@ -82,6 +82,7 @@ h1{
     font-weight: 500;
 }
 .columns{
+    
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -95,7 +96,7 @@ h1{
     height: 100%;
     flex: 1;
     border-radius: 15px;
-    box-shadow: 0 0 0 1px rgba(53, 72, 91, 0.14), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 7px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 0 0 1px #d1d9e0, 0 56px 112px 0 #25292e52;
 
 }
 .col{
@@ -137,7 +138,7 @@ h6{
     padding: 0 6px;
     padding-top: 34px;
     padding-bottom: 6px;
-
+    
 
 }
 .hat{
@@ -307,6 +308,7 @@ h4{
     padding:32px;
     border: 1px #dcdfe2 solid;
     border-radius: 7px;
+    box-shadow: 0 0 0 1px rgba(53, 72, 91, .14), 0 3px 2px rgba(0, 0, 0, .04), 0 7px 5px rgba(0, 0, 0, .02), 0 13px 10px rgba(0, 0, 0, .02), 0 22px 17px rgba(0, 0, 0, .02) ;
 }
 .small-card:hover{
     cursor: pointer;
