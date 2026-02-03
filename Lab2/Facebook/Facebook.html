@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 12px;
+                background-color: #F0F2F5;
+            }
+            .part{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .facebook{
+                width: 320.95px;
+                margin: -28px;
+                margin-bottom: -40px;
+            }
+            .main{
+                
+                padding-bottom: 162px;
+                padding-top: 20px;
+                
+            }
+            .left{
+                display: flex;
+                flex-direction: column;
+                max-width: 528.27px;
+                padding-right: 32px;
+                margin-left: 30px;
+            }
+            .right{
+                margin-top: 100px;
+                max-width:410px;
+                display:flex;
+                flex-direction: column;
+                margin-right: 30px;
+
+            }
+            .center{
+                display: flex;
+                margin: 0 auto;
+                justify-content: center;
+                align-items: center;
+                height: 536px;
+                
+            }
+            .par1{
+                font-size: 27px;
+            }
+            .form-container{
+                display: flex;
+                width: 390px;
+                min-height: 200px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                padding-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 15px;
+                border:#eaeaea 1px solid;
+            }
+            .cont{
+                width: 350px;
+                height: 52px;
+                margin-top: 12px;
+                border-radius: 6px;
+                border: 1px solid #dddfe2;
+                padding: 14px 16px;
+                font-size: 17px;
+                box-sizing: border-box;
+                
+            }
+            
+            .button{
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                background-color: #006eff;
+            }
+            .button:hover {
+    background-color: #166fe5;
+    cursor: pointer;
+}
+    .parol{
+        margin-top: 4px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        text-align: center;
+        font-size: 15px;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    .parol a{
+        color: #1877f2;
+        text-decoration: none;
+    }
+    .parol a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .New-acc{
+        width:230px;
+        margin-top: 26px;
+        background-color: #42B72A;
+        text-align: center;
+        margin-bottom: 26px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .New-acc:hover{
+        background-color: #338d22;
+        cursor: pointer;
+    }
+    ::placeholder{
+        color: #8a8d91;
+        font-size: 16px;
+    }
+    .create{
+        font-size: 14px;
+        text-align: center;
+    }
+    input:focus{
+        border-color: #1877F2;
+        box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2); 
+        outline: none;
+    }
+    .page:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    @media (max-width: 1125px){
+    .left{
+        max-width: 411px;
+    }
+        .par1{
+            font-size: 21px;
+            
+        }
+    }
+    @media (max-width: 845px){
+        .center{
+            flex-direction: column;
+            
+        }
+        .right{
+            margin-top: 10px;
+            
+        }
+        .facebook{
+            margin-top: 80px;
+        }
+        .left{
+            margin-left: 10px;
+            max-width: 528.27px;
+            align-items: center;
+            text-align: center;
+        }
+        .par1{
+            font-size: 27px;
+        }
+    }
+        </style>
+        <title>Facebook - выполните вход или зарегестрируйтесь</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="center">
+            <div class="left part">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" class="facebook">
+                <br>
+                <p class="par1">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+            </div>
+            <div class="right part">
+                <div class="form-container">
+                    <form>
+                        <input class="cont" type="email" placeholder="Электронный адресс или номер телефона">
+                        <br>
+                        <input class="cont" type="password" placeholder="Пароль">
+                        <a href="#"><button class="button cont">Вход</button></a>
+                        <div class="cont parol"><a class="link" href="#">Забыли пароль?</a></div>
+                    </form>
+                    <a href="#"></a><div class="New-acc cont">Создать новый аккаунт</div></a>
+                </div>
+                <div class="create"><p><a class="page"><strong>Создать Страницу</strong></a> знаменитости, музыкальной группы или компании.</p></div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
