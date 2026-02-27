@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { product } from '../../models/product.model';
 @Component({
@@ -20,5 +20,16 @@ export class ProductCardComponent {
   openKaspi(){
     const url = this.product.link;
     window.open(url, '_blank');
+  }
+  @Output() liked = new EventEmitter<product>();
+  @Output() deleted = new EventEmitter<product>();
+  
+  like(event: Event) {
+    event.stopPropagation();
+    this.liked.emit(this.product);
+  }
+  delete(event: Event) {
+    event.stopPropagation();
+    this.deleted.emit(this.product);
   }
 }

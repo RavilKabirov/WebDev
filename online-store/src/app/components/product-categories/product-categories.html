@@ -1,0 +1,5 @@
+<div class="row"><ul>
+    @for (category of categories; track category.id){
+        <li (click)="selectCategory(category)" [class.active]="selectedCategoryId === category.id">{{category.name}}</li>
+    }
+</ul></div>

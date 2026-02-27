@@ -11,10 +11,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     height: 950px;
-    
+    transition: transform 0.2s ease;
 }
 .card:hover{
     cursor: pointer;
+    transform: scale(1.04);
 }
 img{
     display: block;
@@ -66,3 +67,16 @@ button{
     padding: 0 50px;
     
 }
+.dellike{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+.but{
+    flex: 1;
+}
+.activebut{
+    background-color: rgb(255, 131, 156);
+    border-radius: 5px;
+}
+

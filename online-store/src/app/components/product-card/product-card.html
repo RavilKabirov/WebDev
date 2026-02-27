@@ -9,5 +9,9 @@
         <div><p>{{ product.description }}</p></div>
         
         <button (click) = "shareWhatsApp($event)">Share</button>
+        <div class="dellike">
+            <button class="like but" (click)="like($event)" [class.activebut]="product.likedByUser">❤️ {{ product.likes }}</button>
+            <button class="delete but" (click)="delete($event)">🗑️</button>
+        </div>
     </div>
 </div>

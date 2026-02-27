@@ -1,0 +1,27 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-self: center;
+}
+ul{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+li{
+    font-size: 20px;
+    white-space: nowrap;
+    list-style: none;
+}
+li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.active{
+    color: coral;
+}
