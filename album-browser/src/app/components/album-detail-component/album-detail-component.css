@@ -1,0 +1,22 @@
+.album-detail {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.actions {
+  margin: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: #0056b3;
+}

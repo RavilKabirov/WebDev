@@ -1,0 +1,12 @@
+<div *ngIf="album() as a">
+  <div class="album-detail">
+    <h2>Album Details</h2>
+    <p><strong>ID:</strong> {{ a.id }}</p>
+    <p><strong>Title:</strong> {{ a.title }}</p>
+    <p><strong>User ID:</strong> {{ a.userId }}</p>
+  </div>
+  <div class="actions">
+    <a [routerLink]="['/albums', a.id, 'photos']" class="btn">View Photos</a>
+    <a [routerLink]="['/albums']" class="btn">Back</a>
+  </div>
+</div>

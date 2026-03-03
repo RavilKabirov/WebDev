@@ -1,0 +1,34 @@
+import { Component } from '@angular/core';
+import { Album } from '../../models/album.model';
+import { AlbumService } from '../../album-service';
+import { signal } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
+@Component({
+  standalone: true,
+  selector: 'app-album-detail-component',
+  imports: [CommonModule, RouterLink],
+  templateUrl: './album-detail-component.html',
+  styleUrl: './album-detail-component.css',
+})
+export class AlbumDetailComponent {
+  constructor(private albumService: AlbumService,
+    private route: ActivatedRoute,
+  ) {}
+  
+  album = signal<Album | null>(null);
+  ngOnInit(){
+    const id = this.route.snapshot.paramMap.get('id');
+    if (id) {
+      const albumid = +id;
+      this.albumService.getAlbum(albumid).subscribe({
+      next: (response) => {
+        this.album.set(response);
+        
+      }
+    })
+  }
+    
+}
+}

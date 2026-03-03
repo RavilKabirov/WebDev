@@ -1,0 +1,44 @@
+.albums-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  justify-items: stretch;
+}
+
+.album-link {
+  text-decoration: none;
+  width: 100%;
+  display: flex; 
+}
+
+.album {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.album p {
+  margin: 5px 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.album:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.loading {
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #1976d2;
+}

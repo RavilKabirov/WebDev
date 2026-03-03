@@ -5,9 +5,9 @@
     </div>
     <div class="lower">
         <span>{{ product.price }} ₸</span>
-        <span>⭐ {{ product.rating }}</span>
+      <app-star-rating [rating]="product.rating" [readonly]="false" (ratingChange)="onratechange"></app-star-rating>
         <div><p>{{ product.description }}</p></div>
-        
+
         <button (click) = "shareWhatsApp($event)">Share</button>
         <div class="dellike">
             <button class="like but" (click)="like($event)" [class.activebut]="product.likedByUser">❤️ {{ product.likes }}</button>

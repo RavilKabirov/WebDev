@@ -1,0 +1,7 @@
+<div class="photos">
+    @for(photo of this.photos(); track photo.id){
+        <img [src]="photo.thumbnailUrl" width="100px">
+        <p class="title">{{photo.title}}</p>
+    }
+    <button class="back-btn">Back</button>
+</div>

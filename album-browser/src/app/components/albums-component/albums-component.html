@@ -1,0 +1,16 @@
+<div class="albums-cont">
+
+  @for(album of albums(); track album.id){
+    <a [routerLink]="['/albums', album.id]" class="album-link">
+      <div class="album">
+        <p><strong>ID:</strong> {{ album.id }}</p>
+        <p><strong>Title:</strong> {{ album.title }}</p>
+      </div>
+    </a>
+  }
+
+  @empty{
+    <p class="loading">Loading...</p>
+  }
+
+</div>

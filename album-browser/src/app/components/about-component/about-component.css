@@ -1,0 +1,61 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  color: #1976d2;
+  margin-bottom: 15px;
+}
+
+.about-container .description {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.about-container .personal-info p {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.back-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 1rem;
+  color: white;
+  background-color: #1976d2;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #115293;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container .description {
+    font-size: 1rem;
+  }
+
+  .back-btn {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+}
