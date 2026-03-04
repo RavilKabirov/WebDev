@@ -3,5 +3,5 @@
         <img [src]="photo.thumbnailUrl" width="100px">
         <p class="title">{{photo.title}}</p>
     }
-    <button class="back-btn">Back</button>
+    <button class="back-btn" [routerLink]="['/albums', id]">Back</button>
 </div>

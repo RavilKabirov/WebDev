@@ -3,6 +3,8 @@
     <h2>Album Details</h2>
     <p><strong>ID:</strong> {{ a.id }}</p>
     <p><strong>Title:</strong> {{ a.title }}</p>
+    <input [(ngModel)]="str">
+    <button (click)="editTitle(album()!, str)">Change title</button>
     <p><strong>User ID:</strong> {{ a.userId }}</p>
   </div>
   <div class="actions">
